@@ -341,7 +341,7 @@ footer {
   margin-bottom: 5px;
 }
 
-a {
+ .items a {
   background-color: red; 
   border: none;
   border-radius: 3px;
