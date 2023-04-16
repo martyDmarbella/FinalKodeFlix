@@ -64,9 +64,10 @@ body {
     margin-bottom: 10px;
 }
 
+
 .form-wrap form h5 span {
     font-variant: small-caps;
-    color: #e8a704;
+    color: #fe0505;
 }
 
 .form-wrap form .single-input input {
