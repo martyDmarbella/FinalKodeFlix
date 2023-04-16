@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="thumbnail/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="main-parent">
+        <video autoplay muted loop id="bg-video">
+            <source src="./images/loginpagebg_resized_compressed.mp4" type="video/mp4">
+        </video>
+        <div class="form-wrap">
+            <form action="">
+                <h5><span>Kode</span>Flix</h5>
+                <h1><span>Registration</span>Form</h1>
+                <div class="single-input">
+                    <input id="fname" type="text" placeholder="First name" required>
+                </div>
+                <div class="single-input">
+                    <input id="lname" type="text" placeholder="Last name" required>
+                </div>
+                <div class="single-input">
+                    <input id="email" type="email" placeholder="Email Address" required>
+                </div>
+                <div class="single-input">
+                    <input id="pass" type="password" placeholder="Password" required>
+                </div>
+                <div class="single-input">
+                    <input id="cpass" type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="submit-button">
+                    <button class="button">Submit</button>
+                </div>
+                <div class="account-have">
+                    <a href="">Forget Password</a>
+                    <a href="index.html">Have an account please Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./sweetalert.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

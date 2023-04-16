@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <title>Detail</title>
-</head>
-
-<body>
-  <nav style="display: flex; justify-content: space-between;">
-    <img src="./images/logo.png" width="120" height="60" alt="logo">
-    <div id="searchForm">
-      <input id="search" type="text" placeholder="Search Movies...." />
-      <button onClick="searhMovies()" id="btn-search">Search</button>
-    </div>
-    <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Watch trailer</title>
+  </head>
+  <body>
+    <nav style="display: flex; justify-content: space-between;">
+      <a href="home.html">
+        <img src="./images/logo.png" width="120" height="60" alt="logo">
+      </a>
+       <div id="searchForm">
+         <input id="search" type="text" placeholder="Search Movies...." />
+         <button onClick="searhMovies()" id="btn-search">Search</button>
+       </div>
+       <div>
       <div class="items">
         <a href="index.html">Home</a>
         <a href="#pricing">Pricing</a>
         <a href="#footer">Contact Us</a>
       </div>
     </div>
-  </nav>
-
-  <div style="text-align: center;">
-    <section class="sec">
-      <div class="movie-description">
-        <h1 id="original_title"> </h1>
-        <br />
-        <h2>Description:</h2>
-        <p id="overview"></p>
-        <br />
-        <h2>Date Release:</h2>
-        <p id="release_date"></p>
-        <div id="trailer-button"></div>
-      </div>
-      <div class="movie-img">
-        <img id="myImageID" src="" alt="" />
-      </div>
-    </section>
-  </div>
-  <div class="similar-movies">
-    <h1>Similar Movies</h1>
-  </div>
-  <div class="similar">
-    <div id="movies" class="grid"></div>
-  </div>
-  <footer id="footer">
-    <br />
-    <h1>Created by Group One</h1>
-    <p>Marty Marbella and Ryan carl Araneta</p>
-    <p>Contact Us:</p>
-    <p>RyanAraneta@tinder.com</p>
-    <p>marbella.marty@gmail.com</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="detail.js"></script>
-</body>
-
+     </nav>
+    
+     <div style="text-align: center;">
+      <section class="sec">
+        <div class="movie-description">
+          <h1 id="original_title">  </h1>
+          <br />
+          <h2>Description:</h2>
+          <p id="overview"></p>
+          <br />
+          <h2>Date Release:</h2>
+          <p id="release_date"></p>
+          <div id="trailer-button"></div>
+        </div>
+        <div class="movie-img">
+          <img id="myImageID" src="" alt="" />
+        </div>
+      </section>
+    </div>
+    <div class="similar-movies">
+      <h1>Similar Movies</h1>
+    </div>
+    <div class="similar">
+      <div id="movies" class="grid"></div>
+    </div>
+    <footer id="footer">
+      <br />
+      <h1>Created by Group One</h1>
+      <p>Marty Marbella and Ryan carl Araneta</p>
+      <p>Contact Us:</p>
+      <p>RyanAraneta@tinder.com</p>
+      <p>marbella.marty@gmail.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="detail.js"></script>
+  </body>
 </html>
