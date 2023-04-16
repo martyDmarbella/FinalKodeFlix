@@ -88,5 +88,16 @@ function searhMovies() {
     });
 }
 
+const floatingButton = document.getElementById("floating-button");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 300) {
+    floatingButton.style.display = "block";
+  } else {
+    floatingButton.style.display = "none";
+  }
+});
+
+
 renderGenreButtons();
 
