@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Movie</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <nav style="display: flex; justify-content: space-between;">
+      <img src="./images/logo.png" width="120" height="60" alt="logo">
+      
+      <div id="searchForm">
+        <input id="search" type="text" placeholder="Search Movies...." />
+        <button onClick="searhMovies()" id="btn-search">Search</button>
+      </div>
+      <div class="items">
+        <a class="font" href="index.html">Home</a>
+        <a class="font" href="#pricing">Pricing</a>
+        <a class="font" href="#contacts">Contact Us</a>
+        <a class="font" href="#genre">Genres</a>
+      </div>
+    </nav>
+    
+     
+    <header style="position: relative; height: 400px; overflow: hidden;">
+      <video autoplay muted loop style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 140%;">
+        <source src="./images/video.webm" type="video/webm">
+      </video>
+    </header>
+
+      <div class="genre" id="genre">
+        <h1>Genres</h1>
+      </div>
+      <div id="genre-buttons"></div>
+
+    <div class="popular-movies">
+      <h1>Popular Movies</h1>
+    </div>
+
+    <section>
+      <div id="movies" class="grid"></div>
+    </section>
+    
+    <section id="pricing" alt="pricing">
+      <div class="cards">
+        <div class="card">
+          <h2>Basic</h2>
+          <p class="price">$.99/month</p>
+          <ul>
+            <li>Access to all movies</li>
+            <li>SD quality</li>
+            <li>No ads</li>
+          </ul>
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div class="card">
+          <h2>Premium</h2>
+          <p class="price">$.99/month</p>
+          <ul>
+            <li>Access to all movies</li>
+            <li>HD quality</li>
+            <li>No ads</li>
+            <li>Download movies</li>
+          </ul>
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div class="card">
+          <h2>Ultimate</h2>
+          <p class="price">$4.99/month</p>
+          <ul>
+            <li>Access to all movies</li>
+            <li>HD quality</li>
+            <li>No ads</li>
+            <li>Download movies</li>
+            <li>Access to new releases</li>
+          </ul>
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <footer id="contacts">
+      <br />
+      <h1>Created by Group One</h1>
+      <p>Marty D Marbella and Ryan karl Araneta</p>
+      <p>Contact Us:</p>
+      <p>RyanAraneta@tinder.com</p>
+      <p>marbella.marty@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
