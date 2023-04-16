@@ -33,13 +33,15 @@ nav {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 14px; /* Updated font size */
+  font-size: 14px;
+  /* Updated font size */
   width: 250px;
   margin-right: 10px;
   margin-top: 15px;
 }
 
-#search::placeholder { /* Updated placeholder font size */
+#search::placeholder {
+  /* Updated placeholder font size */
   font-size: 14px;
 }
 
@@ -92,23 +94,24 @@ section {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1rem;
 }
+
 .grid img {
   width: 100%;
   filter: drop-shadow(0px 10px 3px black);
   cursor: pointer;
   border-radius: 25px;
   padding: 14px;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 
 .grid-item:hover img {
-  transform: scale(
-    1.2
-  );
+  transform: scale(1.2);
 }
+
 .item-details {
   margin: 2rem 0;
 }
+
 .item-details h5 {
   color: teal;
   margin-top: 0.5rem;
@@ -125,6 +128,7 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
 .sec {
   background-color: #bbf0f3;
   background-image: #4E31AA;
@@ -162,7 +166,7 @@ input {
 }
 
 button {
-  background-color: red; 
+  background-color: red;
   border: none;
   border-radius: 3px;
   color: white;
@@ -317,6 +321,7 @@ footer {
   font-family: 'Roboto', sans-serif;
 
 }
+
 .similar-movies {
   left: 0;
   bottom: 0;
@@ -339,8 +344,8 @@ footer {
   margin-bottom: 5px;
 }
 
- .items a {
-  background-color: red; 
+.items a {
+  background-color: red;
   border: none;
   border-radius: 3px;
   color: white;
@@ -393,6 +398,18 @@ footer {
 
   header {
     height: 200px;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+
+  video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .genre h1 {
@@ -446,3 +463,27 @@ footer {
   }
 }
 
+#contacts {
+
+  background-color: #0c0c0c;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .movie-poster {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contacts {
+    font-size: 14px;
+  }
+}

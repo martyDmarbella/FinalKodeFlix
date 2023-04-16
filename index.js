@@ -7,8 +7,8 @@ const genres = [
   { name: "Comedy", id: 35 },
   { name: "Drama", id: 18 },
   { name: "Horror", id: 27 },
-  { name: "Science Fiction", id: 878 },
-  { name: "Animation", id: 16 }
+  { name: "Fiction", id: 878 },
+  { name: "Animé", id: 16 }
 ];
 
 let data = [];
@@ -48,7 +48,7 @@ function Movie(poster_path, id) {
 
 function renderGenreButtons() {
   const genreContainer = document.querySelector("#genre-buttons");
-  
+
   genres.forEach((genre) => {
     const button = document.createElement("button");
     button.textContent = genre.name;
@@ -58,6 +58,20 @@ function renderGenreButtons() {
     });
     genreContainer.appendChild(button);
   });
+
+  // Add media query for smaller screens
+  const mediaQuery = window.matchMedia('(max-width: 767px)');
+  if (mediaQuery.matches) {
+    genreContainer.style.display = "flex";
+    genreContainer.style.flexWrap = "wrap";
+    genreContainer.style.justifyContent = "center";
+
+    const buttons = document.querySelectorAll(".genre-button");
+    buttons.forEach((button) => {
+      button.style.width = "100px";
+      button.style.margin = "5px";
+    });
+  }
 }
 
 function searchMoviesByGenre(genreId) {
