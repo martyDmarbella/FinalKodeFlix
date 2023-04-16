@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #232324;
+}
+
+
+nav {
+  background-color: rgb(7, 7, 7);
+  padding: 1rem;
+  color: white;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#searchForm {
+  margin-left: 150px;
+}
+
+#search {
+  height: 30px;
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px; /* Updated font size */
+  width: 250px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+#search::placeholder { /* Updated placeholder font size */
+  font-size: 14px;
+}
+
+#btn-search {
+  background-color: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#btn-search:hover {
+  background-color: #3e8e41;
+}
+
+
+#genre-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.genre-button {
+  font-family: Arial, sans-serif;
+}
+
+
+.genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+section {
+  margin: 0 1rem;
+  margin-top: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+.grid img {
+  width: 100%;
+  filter: drop-shadow(0px 10px 3px black);
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 14px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.grid-item:hover img {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.item-details {
+  margin: 2rem 0;
+}
+.item-details h5 {
+  color: teal;
+  margin-top: 0.5rem;
+}
+
+#myImageID {
+  width: 80%;
+  filter: drop-shadow(0px 10px 3px black);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+.sec {
+  background-color: #bbf0f3;
+  background-image: #4E31AA;
+  border-radius: 30px;
+  width: 80%;
+  height: 80%;
+  margin: 20px auto 0;
+}
+
+.movie-img {
+  width: 50%;
+  height: 50%;
+}
+
+.movie-description {
+  max-width: 50%;
+  margin-top: 150px;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#trailer-button {
+  margin-top: 40px;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  width: 20rem;
+  height: 3rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+}
+
+button {
+  background-color: red; 
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+
+.card {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card p.price {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.btn-subscribe {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-subscribe:hover {
+  background-color: red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: 400px;
+}
+
+.card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.card .btn-subscribe {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  align-self: center;
+  margin-top: auto;
+}
+
+.card .btn-subscribe:hover {
+  background-color: red;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(7, 7, 7);
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.similar-movies {
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.popular-movies {
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+a {
+  background-color: red; 
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #searchForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #search {
+    margin-bottom: 10px;
+  }
+
+  #btn-search {
+    margin-left: 0;
+  }
+
+  .font {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .items {
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .items a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header {
+    height: 200px;
+  }
+
+  .genre h1 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .popular-movies h1 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin: 20px;
+    width: 80%;
+  }
+
+  .card h2 {
+    font-size: 28px;
+  }
+
+  .card p.price {
+    font-size: 20px;
+  }
+
+  .card ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .btn-subscribe {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
