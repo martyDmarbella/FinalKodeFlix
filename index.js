@@ -104,5 +104,18 @@ function searhMovies() {
 
 renderGenreButtons();
 
-
-// "5087ec35f89e158e1ac70743164ee730";
+var button = document.getElementById("back-to-top");
+window.onscroll = function() {
+  scrollFunction()
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+button.onclick = function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
